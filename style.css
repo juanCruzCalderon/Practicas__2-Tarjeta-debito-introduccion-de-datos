@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+img{
+	width: 32px;
+	height: 32px;
+}
+
+
+.card, .back-card{
+	border-radius: 20px;
+	padding: 30px 40px;
+	position: relative;
+	max-width: 600px;
+	height: 300px;
+	color: white;
+	background: rgb(48,2,130);
+	background: linear-gradient(39deg, rgba(48,2,130,1) 9%, rgba(43,118,213,1) 66%, rgba(0,144,187,1) 88%);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	overflow: hidden;
+}
+
+
+.icono{
+	transform: rotate(90deg);
+	color: white;
+}
+
+.card__header{
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+.card__number{
+	font-size: 2.2rem;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+.card__caduc{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.card__symbol{
+	padding-left: 20px;
+}
+.card__img{
+
+	border:3px solid white;
+	border-radius: 5px;
+	background-color: white;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+	width: 70px;
+
+}
+
+.card__logo{
+	border-radius: 12px;
+	margin-right: 20px;
+}
+
+
+
+.back-card__franja{
+	height: 24%;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top:15%;
+}
+
+.back-card__texto{
+	font-size: .8rem;
+	flex-grow: 1;
+	border: 1px solid white;
+	padding: 1px;
+}
+
+.back-card__logos{
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
+	justify-self: flex-end;
+	align-self: flex-end;
+
+}
+.back-card__logo{
+	width:70px;
+	border-radius: 3px;
+}
+.back-card__p{
+	font-size: .9rem;
+}
+
+.back-card__espacio{
+	height: 50px;
+	flex-shrink: 0;
+}
+
+.back-card__numeros{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.back-card__numeros-in{
+	color: black;
+	display: flex;
+	width: 60%;
+	background-color: white;
+	padding: 3px;
+	flex-direction: row;
+	justify-content: flex-end;
+	font-size: 1.2rem;
+	gap: 40px;
+}
