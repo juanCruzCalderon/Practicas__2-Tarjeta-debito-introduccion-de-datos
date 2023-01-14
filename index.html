@@ -10,58 +10,80 @@
 <body>
 
 	<div class="container">
-		<div class="card">
-			<div class="card__header">
-				<img src="logo.jpg" class="card__logo">
-				<h2><b>Banco</b> Provincia</h1>
-			</div>
-			<div class="card__symbol">
-			<span class="material-symbols-outlined">developer_board</span>
-			<span class="material-symbols-outlined icono">nest_remote_comfort_sensor</span>
-			</div>
-			<h3 class="card__number">xxxx - xxxx - xxxx - xxxx</h3>
-			<div class="card__caduc">
-				<span>Desde - since:</span>
-				<p>xx/xx      </p>
-				<span>Hasta - Thru:</span>
-				<p>xx/xx</p>
-			</div>
-			<h4>Nombre Apellido</h4>
-			<h4>Instituto de bancos no se que</h4>
-			<img src="visa.jpg" class="card__img">
-		</div>
-
-		<div class="back-card">
-			<p class="back-card__p">Centro de atencio red link no seque 12334543322143243546</p>
-			<div class="back-card__franja"></div>
-			<div class="back-card__espacio"></div>
-			<p class="back-card__p">Para emergencia llame a servicio o muera y listo 66qwwq5re6w</p>
-			<div class="back-card__numeros">
-				<div class="back-card__numeros-in">
-				<p>9181</p>
-				<p class="back-card__seguridad">xxx</p>
+		<div class="giracion">
+			<div class="card">
+				<div class="card__header">
+					<img src="logo.jpg" class="card__logo">
+					<h2><b>Banco</b> Provincia</h1>
 				</div>
+				<div class="card__symbol">
+				<span class="material-symbols-outlined">developer_board</span>
+				<span class="material-symbols-outlined icono">nest_remote_comfort_sensor</span>
+				</div>
+				<h3 class="card__number"><b class="back-card__numero">xxxx</b> - <b class="back-card__numero">xxxx</b> - <b class="back-card__numero">xxxx</b> - <b class="back-card__numero">xxxx</b></h3>
+				<div class="card__caduc">
+					<span>Desde - since:</span>
+					<p>xx/xx      </p>
+					<span>Hasta - Thru:</span>
+					<p>xx/xx</p>
+				</div>
+				<h4>Nombre Apellido</h4>
+				<h4>Instituto de bancos no se que</h4>
+				<img src="visa.jpg" class="card__img">
 			</div>
-			<div class="back-card__texto">
-				Fua no sé mucho texto Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.
-			</div>
-			<div class="back-card__logos">
-				<p>Saca guita de:</p>
-				<img src="plus.jpg" class="back-card__logo">
-				<img src="link.png">
-				<img src="donal.png">
-			</div>
+
+			<div class="back-card">
+				<p class="back-card__p">Centro de atencio red link no seque 12334543322143243546</p>
+				<div class="back-card__franja"></div>
+				<div class="back-card__espacio"></div>
+				<p class="back-card__p">Para emergencia llame a servicio o muera y listo 66qwwq5re6w</p>
+				<div class="back-card__numeros">
+					<div class="back-card__numeros-in">
+					<p>9181</p>
+					<p class="back-card__seguridad">xxx</p>
+					</div>
+				</div>
+				<div class="back-card__texto">
+					Fua no sé mucho texto Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</div>
+				<div class="back-card__logos">
+					<p>Saca guita de:</p>
+					<img src="plus.jpg" class="back-card__logo">
+					<img src="link.png">
+					<img src="donal.png">
+				</div>
+		</div>
 			
 		</div>
-
-
-		<form class="card-form">
-			
-		</form>
 	</div>
+
+	<form class="form">
+			<h2 class="form__title">Introduzca los suiguientes datos:</h2>
+			<h3>Parte frontal</h3>
+			<div class="form__number">
+				<span>Numero de tarjeta</span>
+				<input step="1" min="0" value="0031" type="number" max="9999" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">
+
+			</div>
+			<div class="form__date">
+				<span>Ingrese fecha de expiracion</span>
+				<input type="number" placeholder="xx">/<input type="number" placeholder="xx">
+			</div>
+			<input type="text" class="form__name" placeholder="Ingrese Nombre">
+			<input type="text" class="form__name" placeholder="Ingrese Apellido">
+			<h3>Parte trasera</h3>
+			<div>
+				<span>Numero de seguridad</span>
+				<input type="number" name="" placeholder="xxx">
+			</div>
+			<div class="form__enviar">
+				<button><span class="material-symbols-outlined">autorenew</span></button>
+				<input type="submit" name="">
+			</div>
+	</form>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

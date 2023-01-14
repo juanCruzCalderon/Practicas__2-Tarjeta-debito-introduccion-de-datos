@@ -7,21 +7,27 @@
 body{
 	display: flex;
 	flex-direction: row;
-	align-content: center;
-	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #b5d459;
+	min-height: 100vh;
 }
 img{
 	width: 32px;
 	height: 32px;
 }
 
-
+.container{
+	perspective: 1100px;
+	width: 600px;
+	height: 300px;
+}
 .card, .back-card{
+	width: 100%;
+	height: 100%;
 	border-radius: 20px;
 	padding: 30px 40px;
 	position: relative;
-	max-width: 600px;
-	height: 300px;
 	color: white;
 	background: rgb(48,2,130);
 	background: linear-gradient(39deg, rgba(48,2,130,1) 9%, rgba(43,118,213,1) 66%, rgba(0,144,187,1) 88%);
@@ -29,8 +35,29 @@ img{
 	flex-direction: column;
 	gap: 10px;
 	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+
 }
 
+.giracion{
+	transition: transform 2s ease-in-out;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+}
+
+.card{
+
+}
+
+.back-card{
+	transform: rotateY(180deg);
+}
+
+.container:hover .giracion{
+	transform: rotateY(180deg);
+}
 
 .icono{
 	transform: rotate(90deg);
@@ -130,3 +157,43 @@ img{
 	font-size: 1.2rem;
 	gap: 40px;
 }
+
+
+
+
+.form{
+	padding: 10px;
+	max-width: 400px;
+	min-height: 60vh;
+	border: 1px solid ;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input{
+	background-color: transparent;
+	outline: none;
+	border: solid 1px grey;
+	padding: 2px;
+}
+
+.form__date input{
+	max-width: 40px;
+}
+
+.form__number input{
+	max-width: 60px;
+}
+
+.form__enviar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__name{
+	padding: 6px;
+}
+
