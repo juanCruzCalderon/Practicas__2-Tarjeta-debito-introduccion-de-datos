@@ -59,6 +59,10 @@ img{
 	transform: rotateY(180deg);
 }
 
+.boton__girar{
+	transform: rotateY(180deg);
+}
+
 .icono{
 	transform: rotate(90deg);
 	color: white;
