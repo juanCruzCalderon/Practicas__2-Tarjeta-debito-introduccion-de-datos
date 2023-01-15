@@ -25,9 +25,9 @@
 					<span>Desde - since:</span>
 					<p>xx/xx      </p>
 					<span>Hasta - Thru:</span>
-					<p>xx/xx</p>
+					<p><span class="card__fecha-hasta">xx</span>/<span class="card__fecha-hasta">xx</span></p>
 				</div>
-				<h4>Nombre Apellido</h4>
+				<h4><span class="card__nombre">-Nombre-</span> <span class="card__apellido">-Apellido-</span></h4>
 				<h4>Instituto de bancos no se que</h4>
 				<img src="visa.jpg" class="card__img">
 			</div>
@@ -61,23 +61,23 @@
 	</div>
 
 	<form class="form">
-			<h2 class="form__title">Introduzca los suiguientes datos:</h2>
+			<h2 class="form__title">Ingresar:</h2>
 			<h3>Parte frontal</h3>
 			<div class="form__number">
-				<span>Numero de tarjeta</span>
-				<input step="1" min="0" value="0031" type="number" max="9999" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input value="0012" step="1" min="0" max="9999" type="number" placeholder="xxxx">
+				<h4>Numero de tarjeta</h4>
+				<input required step="1" min="0" type="number" max="9999" placeholder="xxxx">-<input required step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input required step="1" min="0" max="9999" type="number" placeholder="xxxx">-<input required step="1" min="0" max="9999" type="number" placeholder="xxxx">
 
 			</div>
 			<div class="form__date">
 				<span>Ingrese fecha de expiracion</span>
-				<input type="number" placeholder="xx">/<input type="number" placeholder="xx">
+				<input required type="number" min="1" max="12" step="1" placeholder="xx">/<input required min="23" max="99" step="1" type="number" placeholder="xx">
 			</div>
-			<input type="text" class="form__name" placeholder="Ingrese Nombre">
-			<input type="text" class="form__name" placeholder="Ingrese Apellido">
+			<input type="text" required class="form__nombre" placeholder="Ingrese Nombre">
+			<input type="text" required class="form__apellido" placeholder="Ingrese Apellido">
 			<h3>Parte trasera</h3>
 			<div>
 				<span>Numero de seguridad</span>
-				<input type="number" name="" placeholder="xxx">
+				<input type="number" required min="0" max="999" name="" placeholder="xxx" step="1" class="form__seguridad">
 			</div>
 			<div class="form__enviar">
 				<button class=""><span class="material-symbols-outlined form__girar">autorenew</span></button>

@@ -19,8 +19,8 @@ num.forEach((n,i)=>{n.addEventListener("blur",()=>{
 });
 
 
-const numeros=get(".card__number");
-console.log(num[0].index);
+//const numeros=get(".card__number");
+
 
 
 //Boton para girar la tarjeta
@@ -29,3 +29,37 @@ const btnGirar=get(".form__girar");
 btnGirar.addEventListener("click",(e)=>{
 	e.preventDefault();
 	capaGirar.classList.toggle("boton__girar")});
+
+
+//Inputs de fecha
+const fecha=getAll(".form__date input");
+const cardFecha=getAll(".card__fecha-hasta");
+fecha.forEach((elem,i)=>{
+	elem.addEventListener("blur",()=>{
+		if (elem.value>0 && elem.value<100) {
+			let cad= "0"+ elem.value;
+			cardFecha[i].textContent=cad.slice(-2);
+		} else cardFecha[i].textContent="xx";
+	})
+});
+
+
+//inputs de nombre y apellido
+const nombreForm=get(".form__nombre");
+const nombreCard=get(".card__nombre");
+nombreForm.addEventListener("blur",()=>nombreCard.textContent=nombreForm.value);
+
+const apellidoForm=get(".form__apellido");
+const apellidoCard=get(".card__apellido");
+apellidoForm.addEventListener("blur",()=>apellidoCard.textContent=apellidoForm.value);
+
+
+
+
+const seguridadForm=get(".form__seguridad");
+const seguridadCard=get(".back-card__seguridad");
+seguridadForm.addEventListener("blur",()=>{
+	if (seguridadForm.value>0 && seguridadForm.value<999) {}
+		let cad="00"+seguridadForm.value;
+		seguridadCard.textContent=cad.slice(-3);
+});
